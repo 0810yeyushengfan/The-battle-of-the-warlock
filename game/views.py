@@ -11,6 +11,8 @@ def index(request):
 
 def play(request):
     line1='<h1 style="text-align:center">游戏页面</h1>'
-    line2='<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi.gtimg.cn%2Fqqlive%2Fimg%2Fjpgcache%2Ffiles%2Fqqvideo%2Fy%2Fyerxhe0fg1ygnex.jpg&refer=http%3A%2F%2Fi.gtimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638678230&t=ef2d2142fc3b26d0f596415c4f629806" width=800>'
+    line3='<a href="/">返回主页面</a>'
+    line4='<hr/>'
+    line2='<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi.gtimg.cn%2Fqqlive%2Fimg%2Fjpgcache%2Ffiles%2Fqqvideo%2Fy%2Fyerxhe0fg1ygnex.jpg&refer=http%3A%2F%2Fi.gtimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638678230&t=ef2d2142fc3b26d0f596415c4f629806" width=2000>'
 
-    return HttpResponse(line1+line2)
+    return HttpResponse(line1+line3+line4+line2)
