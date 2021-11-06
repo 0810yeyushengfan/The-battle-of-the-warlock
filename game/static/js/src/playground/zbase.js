@@ -11,10 +11,10 @@ class AcGamePlayground{
         this.players = []; // 存储所有角色
 
         // 添加自己的角色
-        this.players.push(new Player(this, this.width/2, this.height/2,  this.height*0.05, "white", this.height*0.15, true));
+        this.players.push(new Player(this, this.width/2, this.height/2,  this.height * 0.058, "white", this.height*0.15, true));
 
         for(let i = 0;i < 5;i ++ ){ // 添加5个AI对手
-            this.players.push(new Player(this, this.width/2, this.height/2, this.height * 0.05, "blue", this.height * 0.15, false));
+            this.players.push(new Player(this, this.width/2, this.height/2, this.height * 0.058, "blue", this.height * 0.15, false));
         }
 
         this.start();
