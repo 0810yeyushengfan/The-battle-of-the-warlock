@@ -1,4 +1,4 @@
-let AC_GAME_OBJECTS = []
+let AC_GAME_OBJECTS = [];
 
 class AcGameObject{
 
@@ -18,11 +18,11 @@ class AcGameObject{
     }
 
     destroy(){ // 删掉该物体
-        this.on_destory();
+        this.on_destroy();
 
         for(let i = 0;i < AC_GAME_OBJECTS.length; i ++ ){
             if(AC_GAME_OBJECTS[i] === this){
-                AC_GAME_OBJECTS.split(i,1);
+                AC_GAME_OBJECTS.splice(i,1);
                 break;
             }
         }
