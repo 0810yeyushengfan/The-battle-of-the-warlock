@@ -1,10 +1,12 @@
 class AcGamePlayground{
     constructor(root){
         this.root = root;
-        this.$playground = $(`<div>游戏界面</div>`);
+        this.$playground = $(`<div class="ac_game_playfround></div>`);
 
-        this.hide();
+        // this.hide();
         this.root.$ac_game.append(this.$playground);
+        this.width = this.$playground.width();
+        this.height = this.$playground.height();
 
         this.start();
     }
@@ -12,11 +14,11 @@ class AcGamePlayground{
     start(){
     }
 
-    show(){
+    show(){ // 打开playground页面
         this.$playground.show();
     }
 
-    hide(){
+    hide(){ // 关闭playground页面
         this.$playground.hide();
     }
     
